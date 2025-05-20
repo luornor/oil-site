@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-blue-900 text-white py-12 mt-16">
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
         {/* Company Info */}
         <div>
-          <h3 className="text-2xl font-bold mb-4">ShipMaster</h3>
+          <h3 className="text-2xl font-bold mb-4">Philotes Maritime Services</h3>
           <p className="text-sm">
             Leading logistics and shipping company delivering packages across the globe, fast and safe.
           </p>
@@ -34,28 +34,9 @@ const Footer = () => {
             <li className="flex items-center gap-2"><Mail className="w-4 h-4" /> info@shipmaster.com</li>
           </ul>
         </div>
-
-        {/* Newsletter */}
-        <div>
-          <h4 className="text-lg font-semibold mb-4">Newsletter</h4>
-          <p className="text-sm mb-3">Get updates on offers and new routes.</p>
-          <form className="flex flex-col sm:flex-row items-center gap-2">
-            <input
-              type="email"
-              placeholder="Your email"
-              className="w-full px-3 py-2 rounded-md text-black"
-            />
-            <button
-              type="submit"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md"
-            >
-              Subscribe
-            </button>
-          </form>
-        </div>
       </div>
 
-      <div className="mt-8 text-center text-sm text-gray-300">
+      <div className="mt-8 text-center text-sm text-gray-300 px-4">
         © {new Date().getFullYear()} ShipMaster. All rights reserved.
       </div>
     </footer>
