@@ -7,7 +7,6 @@ import TeamSection from "../components/TeamSection";
 import TestimonialsSection from "../components/TestimonialSection";
 import FeatureSection from "../components/FeatureSection";
 import FactSection from "../components/FactSection";
-import PricingSection from "../components/PriceSection";
 
 const Home = () => {
   return (
@@ -19,7 +18,6 @@ const Home = () => {
         <FactSection />
         <ServiceSection/>
         <FeatureSection />
-        <PricingSection />  
         <TeamSection />
         <TestimonialsSection />
 
