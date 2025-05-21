@@ -1,9 +1,9 @@
-// src/pages/ShippingAgency.tsx
+
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
 
-const ShippingAgency = () => {
+const ShippingAgencyHusbandry = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -126,4 +126,4 @@ const ShippingAgency = () => {
   );
 };
 
-export default ShippingAgency;
+export default ShippingAgencyHusbandry;
