@@ -17,6 +17,9 @@ import BunkerFreshWater from "./pages/BunkerFreshWater";
 import MooringRopes from "./pages/MooringRopes";
 import SludgeSlopRemoval from "./pages/SludgeSlopRemoval";
 import CustomClearance from "./pages/CustomClearance";
+import AdmiraltyCharts from "./pages/AdmiraltyCharts";
+import SecurityBoatServices from "./pages/SecurityBoatServices";
+import GeneralMaritimeServices from "./pages/GeneralMaritimeServices";
 
 function App() {
   return (
@@ -39,6 +42,9 @@ function App() {
         <Route path="/mooring-ropes-supply" element={<MooringRopes />} />
         <Route path="/sludge-slop-removal" element={<SludgeSlopRemoval />} />
         <Route path="/custom-clearance-certification" element={<CustomClearance />} />
+        <Route path="/admiralty-charts-publication" element={<AdmiraltyCharts />} />
+        <Route path="/security-boat-services" element={<SecurityBoatServices />} />
+        <Route path="/general-maritime-services" element={<GeneralMaritimeServices />} />
         {/* Add more routes as needed */}
       </Routes>
     </Router>
