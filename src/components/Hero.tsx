@@ -31,9 +31,9 @@ const Hero = () => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === current ? "opacity-100 z-20" : "opacity-0 z-10"
-          }`}
+          className={`absolute inset-0 transition-opacity duration-[2000ms] ease-in-out ${
+          index === current ? "opacity-100 z-20" : "opacity-0 z-10"
+        }`}
         >
           <div
             className={`w-full h-full bg-cover bg-center scale-100 animate-zoom relative`}
