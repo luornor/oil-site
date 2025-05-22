@@ -20,6 +20,12 @@ import CustomClearance from "./pages/CustomClearance";
 import AdmiraltyCharts from "./pages/AdmiraltyCharts";
 import SecurityBoatServices from "./pages/SecurityBoatServices";
 import GeneralMaritimeServices from "./pages/GeneralMaritimeServices";
+import AgencyBulkCargo from "./pages/AgencyBulkCargo";
+import ClearingForwarding from "./pages/ClearingForwarding";
+import LiquidCargoAgency from "./pages/LiquidCargoAgency";
+import ShipManagementService from "./pages/ShipManagementService";
+import BondedTerminal from "./pages/BondedTerminal";
+import RealEstateService from "./pages/RealEstateService";
 
 function App() {
   return (
@@ -45,7 +51,12 @@ function App() {
         <Route path="/admiralty-charts-publication" element={<AdmiraltyCharts />} />
         <Route path="/security-boat-services" element={<SecurityBoatServices />} />
         <Route path="/general-maritime-services" element={<GeneralMaritimeServices />} />
-        {/* Add more routes as needed */}
+        <Route path="/agency-on-bulk-cargo" element={<AgencyBulkCargo />} />
+        <Route path="/clearing-and-forwarding" element={<ClearingForwarding />} />
+        <Route path="/agency-on-liquid-cargo" element={<LiquidCargoAgency />} />
+        <Route path="/bonded-terminal" element={<BondedTerminal />} />
+        <Route path="/ship-management" element={<ShipManagementService />} />
+        <Route path="/real-estate-service" element={<RealEstateService />} />
       </Routes>
     </Router>
   );

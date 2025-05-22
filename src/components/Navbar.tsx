@@ -28,7 +28,7 @@ const services = [
   { label: "AGENCY ON LIQUID CARGO", path: "/agency-on-liquid-cargo" },
   { label: "BONDED TERMINAL", path: "/bonded-terminal" },
   { label: "SHIP MANAGEMENT", path: "/ship-management" },
-  { label: "KING BUILDING(REAL ESTATE)", path: "/king-building-real-estate" },
+  { label: "REAL ESTATE SERVICES", path: "/real-estate-service" },
 ];
 
 const Navbar = () => {
@@ -37,14 +37,15 @@ const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const heroHeight = document.querySelector("#hero")?.clientHeight || 300;
-      setIsSticky(window.scrollY >= heroHeight);
-    };
+  const handleScroll = () => {
+    setIsSticky(window.scrollY >= 100); // Use fixed threshold
+  };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  handleScroll(); // Initialize state on mount
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
 
   return (
     <header
