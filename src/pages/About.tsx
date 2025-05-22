@@ -52,7 +52,7 @@ const About = () => {
       <Navbar />
 
       {/* Header */}
-      <header className="relative bg-[url('/img/carousel-1.jpg')] bg-cover bg-center h-[50vh] flex items-center">
+      <header className="relative bg-[url('/img/carousel-1.png')] bg-cover bg-center h-[50vh] flex items-center">
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 container mx-auto px-6 text-white text-center">
           <h1 className="text-4xl md:text-5xl font-bold">About Us</h1>

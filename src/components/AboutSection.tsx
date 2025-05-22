@@ -1,27 +1,28 @@
 import { motion } from "framer-motion";
-import aboutImage from "/img/about.jpg";
+import aboutImage from "/img/about.png";
 import { Globe, Clock4 } from "lucide-react";
 
-
-
 const AboutSection = () => {
-
   return (
     <section className="overflow-hidden py-10 bg-white">
       <div className="container mx-auto px-4 md:px-0">
-        <div className="grid md:grid-cols-2 gap-12 items-stretch">
+        <div className="grid md:grid-cols-2 gap-12 items-stretch md:px-4">
           {/* Animated Image Side */}
           <motion.div
             className="w-full h-full"
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <img
+            <motion.img
               src={aboutImage}
               alt="About Philotes"
-              className="w-full h-full object-cover shadow-lg"
+              className="w-full h-auto object-cover shadow-lg rounded-lg"
+              initial={{ scale: 0.95, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+              viewport={{ once: true }}
             />
           </motion.div>
 
@@ -31,17 +32,19 @@ const AboutSection = () => {
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
           >
             <h6 className="text-blue-400 text-sm uppercase mb-3 font-semibold">About Us</h6>
             <h2 className="text-3xl md:text-4xl font-bold mb-5 text-blue-900">
               Delivering Exceptional Maritime Services Since 2007
             </h2>
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Philotes Maritime Services is a globally recognized shipping company, founded by maritime professionals committed to excellence. We offer a broad spectrum of logistics and shipping solutions globally.
+              Philotes Maritime Services is a globally recognized shipping company, founded by maritime professionals
+              committed to excellence. We offer a broad spectrum of logistics and shipping solutions globally.
             </p>
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Our base of operations is in Lagos, Nigeria, with support offices across Africa, Asia, and the Americas. This enables us to serve clients globally with unmatched reach and expertise.
+              Our base of operations is in Accra, Ghana, with support offices across Africa, Asia, and the Americas.
+              This enables us to serve clients globally with unmatched reach and expertise.
             </p>
             <p className="text-gray-700 mb-4 leading-relaxed font-semibold">
               Our Vision:
@@ -89,8 +92,6 @@ const AboutSection = () => {
             </a>
           </motion.div>
         </div>
-
-     
       </div>
     </section>
   );
