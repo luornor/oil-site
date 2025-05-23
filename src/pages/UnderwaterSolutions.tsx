@@ -87,10 +87,6 @@ const UnderwaterSolutions = () => {
             <p>
               From hull repairs to thruster replacement, Philotes Maritime Services provides efficient, safe, and certified underwater solutions trusted by shipowners, managers, and insurers.
             </p>
-
-            <p className="text-sm text-gray-600 mt-6">
-              For support or more information, please <a href="/contact" className="text-[#ff3c41] underline">contact us today</a>.
-            </p>
           </section>
         </motion.div>
       </main>

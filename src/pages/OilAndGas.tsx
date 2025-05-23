@@ -55,7 +55,7 @@ const OilAndGas = () => {
             </ul>
 
             <div className="grid md:grid-cols-2 gap-6 mt-8">
-              <img src="/img/services/KING.jpeg" alt="Oil & Gas Office" className="rounded-lg object-cover w-full h-72" />
+              <img src="/img/services/west_africa_coverage.png" alt="Oil & Gas Office" className="rounded-lg object-cover w-full h-72" />
             </div>
 
             <p>

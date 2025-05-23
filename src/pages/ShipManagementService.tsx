@@ -60,7 +60,7 @@ const ShipManagementService = () => {
             </ul>
 
             <div className="grid md:grid-cols-2 gap-6 mt-8">
-              <img src="/img/services/KING.jpeg" alt="Managed Fleet" className="rounded-lg object-cover w-full h-72" />
+              <img src="/img/services/west_africa_coverage.png" alt="Managed Fleet" className="rounded-lg object-cover w-full h-72" />
             </div>
 
             <p>

@@ -62,7 +62,7 @@ const ShipChandelling = () => {
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 my-8">
-              <img src="/img/services/KING.jpeg" alt="Chandelling" className="rounded-lg object-cover w-full h-72" />
+              <img src="/img/services/west_africa_coverage.png" alt="Chandelling" className="rounded-lg object-cover w-full h-72" />
             </div>
 
           </section>

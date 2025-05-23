@@ -1,47 +1,54 @@
 // src/components/FeatureSection.tsx
-import { Globe2, Truck, Headphones } from "lucide-react";
+import { Globe2, Clock, PackageSearch, MapPinned } from "lucide-react";
 import { motion } from "framer-motion";
-import featureImg from "/img/feature.jpg";
+import featureImg from "/img/feature.png";
 
 const features = [
   {
     icon: <Globe2 className="w-8 h-8 text-red-500" />,
-    title: "Global Maritime Access",
+    title: "Multinational Port Access",
     description:
-      "With offices and port coverage across West Africa and beyond, Philotes ensures your cargo reaches every destination with speed and confidence.",
+      "Philotes provides streamlined vessel and cargo handling across major West African terminals, with deep regional presence and global reach.",
   },
   {
-    icon: <Truck className="w-8 h-8 text-red-500" />,
-    title: "On-Time Logistics Solutions",
+    icon: <Clock className="w-8 h-8 text-red-500" />,
+    title: "Real-Time Coordination",
     description:
-      "From agency coordination to real-time tracking and customs clearance, our integrated services ensure your timelines are always met.",
+      "Through 24/7 ops control, tracking systems, and agent communication, we ensure vessels, shipments, and inland movement stay punctual.",
   },
   {
-    icon: <Headphones className="w-8 h-8 text-red-500" />,
-    title: "24/7 Support & Coordination",
+    icon: <PackageSearch className="w-8 h-8 text-red-500" />,
+    title: "Customs & Compliance Expertise",
     description:
-      "Our operations team is always on call — providing real-time assistance for vessel entry, cargo handling, and emergency logistics needs.",
+      "Our team facilitates smooth customs clearance, certification, and regulatory alignment across international and ECOWAS maritime policies.",
+  },
+  {
+    icon: <MapPinned className="w-8 h-8 text-red-500" />,
+    title: "Heavy Haulage & Last Mile",
+    description:
+      "We operate trailers and flatbeds for safe movement of containers, bulk, and liquid cargo from port to inland destination with precision.",
   },
 ];
 
 const FeatureSection = () => {
   return (
-    <section className="py-5 bg-white">
-      <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
-        {/* Left Column - Text + Features */}
+    <section className="py-10 bg-white px-4">
+      {/* Centered Header */}
+      <div className="text-center max-w-3xl mx-auto mb-10">
+        <h6 className="text-blue-400 text-sm uppercase font-bold mb-2">Our Strengths</h6>
+        <h2 className="text-3xl md:text-4xl font-bold text-black">
+          Your End-to-End Maritime & Logistics Powerhouse
+        </h2>
+      </div>
+
+      <div className="container mx-auto grid md:grid-cols-2 gap-10 items-center">
+        {/* Left - Features */}
         <motion.div
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="pl-6">
-          <h6 className="text-blue-400 text-sm uppercase font-bold mb-3">Our Strengths</h6>
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-8">
-            Your Full-Circle Partner in Maritime, Logistics, and Port Operations
-          </h2>
-          </div>
-
-          <div className="space-y-6 pl-6">
+          <div className="space-y-6 max-w-xl mx-auto md:mx-0">
             {features.map((feature, index) => (
               <div key={index} className="flex items-start gap-4">
                 <div>{feature.icon}</div>
@@ -54,7 +61,7 @@ const FeatureSection = () => {
           </div>
         </motion.div>
 
-        {/* Right Column - Image */}
+        {/* Right - Image */}
         <motion.div
           initial={{ x: 50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}

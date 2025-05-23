@@ -59,7 +59,7 @@ const LogisticsServices = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
               <img
-                src="/img/services/west-africa-map.jpg"
+                src="/img/services/west_africa_coverage.png"
                 alt="West Africa coverage"
                 className="rounded-lg object-cover w-full h-64"
               />

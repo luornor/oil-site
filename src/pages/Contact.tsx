@@ -1,11 +1,10 @@
 // src/pages/Contact.tsx
-import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
 
       {/* Header */}
@@ -13,71 +12,61 @@ const Contact = () => {
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 container mx-auto px-6 text-white text-center">
           <h1 className="text-4xl md:text-5xl font-bold">Contact Us</h1>
-          <p className="text-lg mt-4">Let’s get your shipment moving today.</p>
+          <p className="text-xl mt-4">We’re ready to support your maritime logistics needs.</p>
         </div>
       </header>
 
-      {/* Contact Form + Info */}
+      {/* Ghana Office Info */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-10">
-          {/* Form */}
-          <div>
-            <h2 className="text-2xl font-bold text-blue-900 mb-6">Send a Message</h2>
-            <form className="space-y-4">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full px-4 py-3 border border-gray-300 rounded-md"
-              />
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="w-full px-4 py-3 border border-gray-300 rounded-md"
-              />
-              <input
-                type="text"
-                placeholder="Subject"
-                className="w-full px-4 py-3 border border-gray-300 rounded-md"
-              />
-              <textarea
-                rows={5}
-                placeholder="Your Message"
-                className="w-full px-4 py-3 border border-gray-300 rounded-md"
-              ></textarea>
-              <button
-                type="submit"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition"
-              >
-                Send Message
-              </button>
-            </form>
+        <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12">
+          {/* Ghana Contact */}
+          <div className="space-y-8">
+            <div>
+              <span className="uppercase text-red-500 font-bold text-lg">Contact Us</span>
+              <h2 className="text-4xl font-bold text-blue-900 mt-2">Get In Touch</h2>
+            </div>
+
+            <div className="space-y-6 text-lg text-gray-800">
+              <div className="flex items-start gap-4">
+                <MapPin className="w-7 h-7 text-blue-600 mt-1" />
+                <div>
+                  <h4 className="text-xl font-semibold mb-1">Office Location</h4>
+                  <p>Tema, Community 2, TDC Tower</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <Phone className="w-7 h-7 text-blue-600 mt-1" />
+                <div>
+                  <h4 className="text-xl font-semibold mb-1">Phone Numbers</h4>
+                  <p>+233 245 995 456</p>
+                  <p>+233 200 871 025</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <Mail className="w-7 h-7 text-blue-600 mt-1" />
+                <div>
+                  <h4 className="text-xl font-semibold mb-1">Email Address</h4>
+                  <p>philotesmaritimeservices@gmail.com</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* Contact Info */}
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-2">Address</h3>
-              <p className="flex items-center gap-2 text-gray-700">
-                <MapPin className="w-5 h-5" /> 123 Port Lane, Accra
-              </p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-2">Phone</h3>
-              <p className="flex items-center gap-2 text-gray-700">
-                <Phone className="w-5 h-5" /> +233 123 456 789
-              </p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-2">Email</h3>
-              <p className="flex items-center gap-2 text-gray-700">
-                <Mail className="w-5 h-5" /> info@shipmaster.com
-              </p>
-            </div>
+          {/* Map */}
+          <div className="rounded-lg overflow-hidden shadow-md h-[450px] md:h-[500px] w-full">
+            <iframe
+              loading="lazy"
+              src="https://maps.google.com/maps?q=Community%202%20TDC%20Tower%2C%20Tema%2C%20Ghana&t=m&z=14&output=embed"
+              title="Philotes Ghana Office Location"
+              className="w-full h-full border-0"
+              allowFullScreen
+              aria-hidden="false"
+            />
+
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };
