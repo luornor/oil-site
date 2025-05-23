@@ -25,7 +25,7 @@ import LiquidCargoAgency from "./pages/LiquidCargoAgency";
 import ShipManagementService from "./pages/ShipManagementService";
 import BondedTerminal from "./pages/BondedTerminal";
 import RealEstateService from "./pages/RealEstateService";
-import ShippingAgencyHusbandry from "./pages/ShippingAgencyHusbandry"
+import ShippingAgencyHusbandry from "./pages/ShippingAgencyHusbandry";
 
 
 function App() {
