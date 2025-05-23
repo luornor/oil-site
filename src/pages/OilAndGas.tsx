@@ -20,16 +20,16 @@ const OilAndGas = () => {
         </div>
       </header>
 
-      <main className="flex-grow px-6 py-12 max-w-6xl mx-auto space-y-10 text-gray-800">
+      <main className="flex-grow px-4 py-10 max-w-6xl mx-auto space-y-10 text-gray-800">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
           <img
-            src="/img/services/oilgas.jpg"
+            src="/img/services/oilgas.png"
             alt="Oil and Gas"
-            className="w-full h-80 object-cover rounded-lg shadow mb-8"
+            className="w-full h-full object-cover rounded-lg shadow mb-8"
           />
 
           <section className="space-y-6">
@@ -55,7 +55,7 @@ const OilAndGas = () => {
             </ul>
 
             <div className="grid md:grid-cols-2 gap-6 mt-8">
-              <img src="/img/services/west_africa_coverage.png" alt="Oil & Gas Office" className="rounded-lg object-cover w-full h-72" />
+              <img src="/img/services/west_africa_coverage.png" alt="Oil & Gas Office" className="rounded-lg object-cover w-full h-80" />
             </div>
 
             <p>

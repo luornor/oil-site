@@ -27,9 +27,9 @@ const ShippingAgencyHusbandry = () => {
           transition={{ duration: 0.5 }}
         >
           <img
-            src="/img/services/husbandry.jpg"
+            src="/img/services/husbandry.png"
             alt="Ship husbandry"
-            className="w-full h-96 object-cover rounded-lg shadow mb-8"
+            className="w-full h-full object-cover rounded-lg shadow mb-8"
           />
 
           <section className="space-y-6 text-gray-800">

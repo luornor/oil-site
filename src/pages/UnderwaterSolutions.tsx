@@ -8,7 +8,7 @@ const UnderwaterSolutions = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      <header className="relative bg-center flex items-center justify-center h-[40vh]">
+      <header className="relative bg-center flex items-center justify-center h-[30vh]">
         <div className="absolute inset-0 bg-white" />
         <div className="relative z-10 text-center px-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-blue-400 drop-shadow">
@@ -20,16 +20,16 @@ const UnderwaterSolutions = () => {
         </div>
       </header>
 
-      <main className="flex-grow px-6 py-12 max-w-6xl mx-auto space-y-10 text-gray-800">
+      <main className="flex-grow px-4 py-10 max-w-6xl mx-auto space-y-10 text-gray-800">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
           <img
-            src="/img/services/banner-1.jpg"
+            src="/img/services/under_water.png"
             alt="Underwater Service"
-            className="w-full h-80 object-cover rounded-lg shadow mb-8"
+            className="w-full h-full object-cover rounded-lg shadow mb-8"
           />
 
           <section className="space-y-6">
@@ -50,8 +50,8 @@ const UnderwaterSolutions = () => {
             </ul>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-              <img src="/img/services/underwater-1.webp" alt="Underwater ops" className="rounded-lg object-cover w-full h-72" />
-              <img src="/img/services/underwater-2.png" alt="Hull cleaning" className="rounded-lg object-cover w-full h-72" />
+              <img src="/img/services/underwater-1.png" alt="Underwater ops" className="rounded-lg object-cover w-full h-80" />
+              <img src="/img/services/underwater-2.png" alt="Hull cleaning" className="rounded-lg object-cover w-full h-80" />
             </div>
 
             <h2 className="text-xl font-bold text-blue-900">Hull Cleaning &amp; Propeller Polishing</h2>
@@ -78,9 +78,9 @@ const UnderwaterSolutions = () => {
             </p>
 
             <img
-              src="/img/services/underwater-3.webp"
+              src="/img/services/underwater-3.png"
               alt="Wartsila underwater"
-              className="w-full h-80 object-cover rounded-lg shadow my-8"
+              className="w-full h-full object-cover rounded-lg shadow my-8"
             />
 
             <h2 className="text-xl font-bold text-blue-900">Our Promise</h2>

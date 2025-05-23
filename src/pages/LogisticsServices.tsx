@@ -20,16 +20,16 @@ const LogisticsServices = () => {
         </div>
       </header>
 
-      <main className="flex-grow px-6 py-12 max-w-6xl mx-auto space-y-12">
+      <main className="flex-grow px-4 py-10 max-w-6xl mx-auto space-y-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
           <img
-            src="/img/services/logistics.jpg"
+            src="/img/services/logistics.png"
             alt="Logistics"
-            className="w-full h-80 object-cover rounded-lg shadow mb-8"
+            className="w-full h-full object-cover rounded-lg shadow mb-8"
           />
 
           <section className="space-y-6 text-gray-800">
@@ -61,7 +61,7 @@ const LogisticsServices = () => {
               <img
                 src="/img/services/west_africa_coverage.png"
                 alt="West Africa coverage"
-                className="rounded-lg object-cover w-full h-64"
+                className="rounded-lg object-cover w-full h-full"
               />
               <div className="flex flex-col justify-center">
                 <p className="text-lg font-semibold text-[#ff3c41] mb-2">

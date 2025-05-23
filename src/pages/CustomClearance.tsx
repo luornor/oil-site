@@ -8,7 +8,7 @@ const CustomClearance = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      <header className="relative bg-center flex items-center justify-center h-[40vh]">
+      <header className="relative bg-center flex items-center justify-center h-[30vh]">
         <div className="absolute inset-0 bg-white" />
         <div className="relative z-10 text-center px-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-blue-400 drop-shadow">
@@ -27,9 +27,9 @@ const CustomClearance = () => {
           transition={{ duration: 0.5 }}
         >
           <img
-            src="/img/services/what-is-a-certificate-of-conformity-and-when-is-it-required-for-customs-clearance.png"
+            src="/img/services/customs-clearance.png"
             alt="Custom Clearance"
-            className="w-full h-80 object-cover rounded-lg shadow mb-8"
+            className="w-full h-full object-cover rounded-lg shadow mb-8"
           />
 
           <section className="space-y-6">
@@ -56,7 +56,7 @@ const CustomClearance = () => {
             </ul>
 
             <div className="grid md:grid-cols-2 gap-6 mt-8">
-              <img src="/img/services/west_africa_coverage.png" alt="Customs" className="rounded-lg object-cover w-full h-72" />
+              <img src="/img/services/west_africa_coverage.png" alt="Customs" className="rounded-lg object-cover w-full h-80" />
             </div>
 
             <p>
