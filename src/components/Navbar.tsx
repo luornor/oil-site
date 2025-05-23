@@ -86,27 +86,32 @@ const Navbar = () => {
             <span className="flex items-center gap-1 cursor-pointer hover:text-[#ff3c41]">
               Services <ChevronDown className="w-4 h-4" />
             </span>
-            <AnimatePresence>
-              {servicesOpen && (
-                <motion.div
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  transition={{ duration: 0.2 }}
-                  className="absolute top-10 left-0 bg-white shadow-md w-[260px] z-50 rounded"
-                >
-                  <ul className="py-1">
-                    {services.map((service, i) => (
-                      <li key={i}>
-                        <Link to={service.path} className="block px-4 py-1 text-sm hover:text-[#ff3c41] transition-all">
-                          {service.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </motion.div>
-              )}
-            </AnimatePresence>
+           <AnimatePresence>
+                {servicesOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute top-10 left-0 bg-white shadow-md w-[260px] z-50 rounded"
+                  >
+                    <ul className="py-1 max-h-[300px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+
+                      {services.map((service, i) => (
+                        <li key={i}>
+                          <Link
+                            to={service.path}
+                            className="block px-4 py-1 text-sm hover:text-[#ff3c41] transition-all"
+                          >
+                            {service.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
           </li>
           <li><Link to="/contact" className="hover:text-[#ff3c41] transition-all">Contact Us</Link></li>
         </ul>
@@ -137,16 +142,16 @@ const Navbar = () => {
                 <ChevronDown className={`w-4 h-4 transition-transform ${servicesOpen ? "rotate-180" : "rotate-0"}`} />
               </button>
               {servicesOpen && (
-                <ul className="ml-4 space-y-1">
-                  {services.map((service, i) => (
-                    <li key={i}>
-                      <Link to={service.path} className="block py-1 hover:text-[#ff3c41]">
-                        {service.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              )}
+                  <ul className="ml-4 space-y-1 max-h-[250px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+                    {services.map((service, i) => (
+                      <li key={i}>
+                        <Link to={service.path} className="block py-1 hover:text-[#ff3c41]">
+                          {service.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
             </div>
             <Link to="/contact" className="block py-2 hover:text-[#ff3c41]">Contact Us</Link>
           </motion.div>
