@@ -6,63 +6,63 @@ import "keen-slider/keen-slider.min.css";
 
 const testimonials = [
   {
-    image: "/img/testimonial-1.png",
+    image: "/img/testimonials/testimonial-1.png",
     name: "Gregory Page",
     title: "Port Manager",
     text: "Philotes ensured our cargo cleared port ahead of schedule. Their professionalism is unmatched.",
     rating: 4,
   },
   {
-    image: "/img/testimonial-2.jpg",
+    image: "/img/testimonials/testimonial-2.jpg",
     name: "Michael Smith",
     title: "Shipping Agent",
     text: "We've worked with many agents but none offer the dedication and transparency of Philotes.",
     rating: 5,
   },
   {
-    image: "/img/testimonial-3.jpg",
+    image: "/img/testimonials/testimonial-3.jpg",
     name: "Dr Debra Smith",
     title: "Freight Coordinator",
     text: "I’ve never seen such smooth coordination for inland haulage. Absolutely reliable team.",
     rating: 4,
   },
   {
-    image: "/img/testimonial-4.jpg",
+    image: "/img/testimonials/testimonial-4.jpg",
     name: "Jacqueline Bennett",
     title: "Marine Engineer",
     text: "Every call was answered, every challenge resolved — true 24/7 support from Philotes.",
     rating: 4,
   },
   {
-    image: "/img/testimonial-5.png",
+    image: "/img/testimonials/testimonial-5.png",
     name: "Diane Roberts",
     title: "Customs Officer",
     text: "Philotes handled our oil & gas logistics with remarkable compliance and efficiency.",
     rating: 4,
   },
   {
-    image: "/img/testimonial-6.png",
+    image: "/img/testimonials/testimonial-6.png",
     name: "Dr Irene Bennett",
     title: "Export Manager",
     text: "The team’s knowledge of ECOWAS regulations saved us weeks in clearance.",
     rating: 4,
   },
   {
-    image: "/img/testimonial-7.png",
+    image: "/img/testimonials/testimonial-7.png",
     name: "Johny Walker",
     title: "Procurement Lead",
     text: "From paperwork to loading, Philotes is hands-on and accurate.",
     rating: 5,
   },
   {
-    image: "/img/testimonial-8.png",
+    image: "/img/testimonials/testimonial-8.png",
     name: "Miss Christine Houghton",
     title: "Logistics Supervisor",
     text: "Trustworthy, punctual, and sharp. Our go-to agency in West Africa.",
     rating: 4,
   },
   {
-    image: "/img/testimonial-9.png",
+    image: "/img/testimonials/testimonial-9.png",
     name: "Robert Robinson",
     title: "Operations Director",
     text: "Philotes brings calm to chaos — they simply get the job done.",
@@ -147,7 +147,7 @@ const TestimonialsSection = () => {
           ))}
         </div>
 
-        <div className="mt-6 flex justify-center gap-2">
+        <div className="mt-6 flex justify-center gap-3">
           {testimonials.map((_, idx) => (
             <button
               key={idx}
