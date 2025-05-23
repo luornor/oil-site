@@ -5,8 +5,8 @@ import { Globe, Clock4 } from "lucide-react";
 const AboutSection = () => {
   return (
     <section className="overflow-hidden py-10 bg-white">
-      <div className="container mx-auto px-4 md:px-6 lg:px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+      <div className="container mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 items-start">
           {/* Image - full on mobile/tablet, side-by-side on lg */}
           <motion.div
             className="col-span-full lg:col-span-1 w-full h-full"
@@ -18,7 +18,7 @@ const AboutSection = () => {
             <motion.img
               src={aboutImage}
               alt="About Philotes"
-              className="w-full h-full object-cover shadow-lg rounded-sm"
+              className="w-full h-full object-cover shadow-lg"
               initial={{ scale: 0.95, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
@@ -34,6 +34,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
           >
+            <div className="lg:px-0 px-6">
             <h6 className="text-blue-400 text-sm uppercase mb-3 font-semibold">About Us</h6>
             <h2 className="text-3xl md:text-4xl font-bold mb-5 text-blue-900">
               Delivering Exceptional Maritime Services Since 2007
@@ -90,6 +91,7 @@ const AboutSection = () => {
             >
               Learn More About Us
             </a>
+            </div>
           </motion.div>
         </div>
       </div>

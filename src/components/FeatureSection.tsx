@@ -27,19 +27,21 @@ const features = [
 const FeatureSection = () => {
   return (
     <section className="py-5 bg-white">
-      <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center px-6 md:px-6">
+      <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left Column - Text + Features */}
         <motion.div
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
         >
+          <div className="pl-6">
           <h6 className="text-blue-400 text-sm uppercase font-bold mb-3">Our Strengths</h6>
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-8">
             Your Full-Circle Partner in Maritime, Logistics, and Port Operations
           </h2>
+          </div>
 
-          <div className="space-y-6">
+          <div className="space-y-6 pl-6">
             {features.map((feature, index) => (
               <div key={index} className="flex items-start gap-4">
                 <div>{feature.icon}</div>
