@@ -18,8 +18,8 @@ const Home = () => {
         <FeatureSection />
         <ServiceSection/>
         <TestimonialsSection />
-        <Footer />
       </main>
+      <Footer />
     </div>
   );
 };
