@@ -25,7 +25,7 @@ import LiquidCargoAgency from "./pages/LiquidCargoAgency";
 import ShipManagementService from "./pages/ShipManagementService";
 import BondedTerminal from "./pages/BondedTerminal";
 import RealEstateService from "./pages/RealEstateService";
-import ShippingAgencyHusbandry from "./pages/ShippingAgencyHusbandry";
+import ShippingAgency from "./pages/ShippingAgency";
 
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/shipping-agency-husbandry" element={<ShippingAgencyHusbandry />} />
+        <Route path="/shipping-agency-husbandry" element={<ShippingAgency />} />
         <Route path="/port-stevedores-service" element={<PortStevedores />} />
         <Route path="/logistics-services" element={<LogisticsServices />} />
         <Route path="/ship-spare-parts-supply" element={<ShipSpareParts />} />

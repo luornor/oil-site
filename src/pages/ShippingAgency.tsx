@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
 
 
-const ShippingAgencyHusbandry = () => {
+const ShippingAgency = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -126,4 +126,4 @@ const ShippingAgencyHusbandry = () => {
   );
 };
 
-export default ShippingAgencyHusbandry;
+export default ShippingAgency;
