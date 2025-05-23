@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
 
 const services = [
-  { label: "Shipping Agency", slug: "shipping-agency-husbandry", image: "/img/services/shipping.jpg" },
-  { label: "Logistics", slug: "logistics-services", image: "/img/services/logistics.jpg" },
-  { label: "Port Stevedores", slug: "port-stevedores-service", image: "/img/services/stevedores.jpg" },
-  { label: "Underwater Services", slug: "underwater-solutions", image: "/img/services/underwater.jpg" },
-  { label: "Vessel Management", slug: "vessel-management", image: "/img/services/vessel.jpg" },
-  { label: "Bulk Cargo", slug: "agency-on-bulk-cargo", image: "/img/services/bulk.jpg" },
-  { label: "Custom Clearance", slug: "custom-clearance-certification", image: "/img/services/customs.jpg" },
-  { label: "Real Estate", slug: "real-estate-service", image: "/img/services/realestate.jpg" },
+  { label: "Shipping Agency", slug: "shipping-agency-husbandry", image: "/img/services/husbandry.png" },
+  { label: "Logistics", slug: "logistics-services", image: "/img/services/logistics.png" },
+  { label: "Port Stevedores", slug: "port-stevedores-service", image: "/img/services/port_service.png" },
+  { label: "Underwater Services", slug: "underwater-solutions", image: "/img/services/under_water.png" },
+  { label: "Vessel Management", slug: "vessel-management", image: "/img/services/Vessel_Management.png" },
+  { label: "Bulk Cargo", slug: "agency-on-bulk-cargo", image: "/img/services/agency_bulk_cargo.png" },
+  { label: "Custom Clearance", slug: "custom-clearance-certification", image: "/img/services/customs-clearance.png" },
+  { label: "Real Estate", slug: "real-estate-service", image: "/img/services/Real-estate.png" },
 ];
 
 const ServiceSection = () => {
