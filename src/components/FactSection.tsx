@@ -4,8 +4,8 @@ import CountUp from "react-countup";
 
 const FactSection = () => {
   return (
-    <section className="py-20 px-10 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="py-10 px-4 sm:px-6 md:px-10 bg-white">
+      <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* LEFT SIDE - Text + Call */}
           <motion.div

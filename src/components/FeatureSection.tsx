@@ -1,34 +1,42 @@
 // src/components/FeatureSection.tsx
 import { Globe2, Truck, Headphones } from "lucide-react";
-import featureImg from "/img/feature.jpg"; // Ensure this image exists
+import { motion } from "framer-motion";
+import featureImg from "/img/feature.jpg";
 
 const features = [
   {
     icon: <Globe2 className="w-8 h-8 text-red-500" />,
-    title: "Worldwide Service",
-    description: "Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet",
+    title: "Global Maritime Access",
+    description:
+      "With offices and port coverage across West Africa and beyond, Philotes ensures your cargo reaches every destination with speed and confidence.",
   },
   {
     icon: <Truck className="w-8 h-8 text-red-500" />,
-    title: "On Time Delivery",
-    description: "Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet",
+    title: "On-Time Logistics Solutions",
+    description:
+      "From agency coordination to real-time tracking and customs clearance, our integrated services ensure your timelines are always met.",
   },
   {
     icon: <Headphones className="w-8 h-8 text-red-500" />,
-    title: "24/7 Telephone Support",
-    description: "Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet",
+    title: "24/7 Support & Coordination",
+    description:
+      "Our operations team is always on call — providing real-time assistance for vessel entry, cargo handling, and emergency logistics needs.",
   },
 ];
 
 const FeatureSection = () => {
   return (
-    <section className="py-10 bg-white">
-      <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <section className="py-5 bg-white">
+      <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center px-6 md:px-6">
         {/* Left Column - Text + Features */}
-        <div className="pl-20 h-full">
-          <h6 className="text-blue-400 text-sm uppercase font-bold mb-3">Our Features</h6>
+        <motion.div
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h6 className="text-blue-400 text-sm uppercase font-bold mb-3">Our Strengths</h6>
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-8">
-            We Are Trusted Logistics Company Since 1990
+            Your Full-Circle Partner in Maritime, Logistics, and Port Operations
           </h2>
 
           <div className="space-y-6">
@@ -42,16 +50,21 @@ const FeatureSection = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
 
         {/* Right Column - Image */}
-        <div className="overflow-hidden">
+        <motion.div
+          initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className="overflow-hidden"
+        >
           <img
             src={featureImg}
-            alt="Our Features"
-            className="w-full h-full object-cover"
+            alt="Philotes Maritime Services"
+            className="w-full h-full object-cover rounded-sm shadow"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

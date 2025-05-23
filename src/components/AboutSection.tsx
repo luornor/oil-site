@@ -5,11 +5,11 @@ import { Globe, Clock4 } from "lucide-react";
 const AboutSection = () => {
   return (
     <section className="overflow-hidden py-10 bg-white">
-      <div className="container mx-auto px-4 md:px-0">
-        <div className="grid md:grid-cols-2 gap-12 items-stretch md:px-4">
-          {/* Animated Image Side */}
+      <div className="container mx-auto px-4 md:px-6 lg:px-4">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          {/* Image - full on mobile/tablet, side-by-side on lg */}
           <motion.div
-            className="w-full h-full"
+            className="col-span-full lg:col-span-1 w-full h-full"
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
@@ -18,7 +18,7 @@ const AboutSection = () => {
             <motion.img
               src={aboutImage}
               alt="About Philotes"
-              className="w-full h-auto object-cover shadow-lg rounded-lg"
+              className="w-full h-full object-cover shadow-lg rounded-sm"
               initial={{ scale: 0.95, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
@@ -26,9 +26,9 @@ const AboutSection = () => {
             />
           </motion.div>
 
-          {/* Animated Text Side */}
+          {/* Text - stacked on small screens, side-by-side on lg */}
           <motion.div
-            className="about-text"
+            className="col-span-full lg:col-span-1"
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}

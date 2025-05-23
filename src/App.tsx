@@ -5,7 +5,6 @@ import About from "./pages/About";
 import LogisticsServices from "./pages/LogisticsServices";
 import PortStevedores from "./pages/PortStevedoresService";
 import Contact from "./pages/Contact";
-// import ShippingAgencyHusbandry from "./pages/ShippingAgencyHusbandry";
 import ShipSpareParts from "./pages/ShipSpareParts";
 import UnderwaterSolutions from "./pages/UnderwaterSolutions";
 import ShipChandelling from "./pages/ShipChandelling";
@@ -26,6 +25,8 @@ import LiquidCargoAgency from "./pages/LiquidCargoAgency";
 import ShipManagementService from "./pages/ShipManagementService";
 import BondedTerminal from "./pages/BondedTerminal";
 import RealEstateService from "./pages/RealEstateService";
+import ShippingAgencyHusbandry from "./pages/ShippingAgencyHusbandry"
+
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/shipping-agency-husbandry" element={<ShippingAgencyHusbandry />} /> */}
+        <Route path="/shipping-agency-husbandry" element={<ShippingAgencyHusbandry />} />
         <Route path="/port-stevedores-service" element={<PortStevedores />} />
         <Route path="/logistics-services" element={<LogisticsServices />} />
         <Route path="/ship-spare-parts-supply" element={<ShipSpareParts />} />
