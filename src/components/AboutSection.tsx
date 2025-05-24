@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import aboutImage from "/img/about.png";
 import { Globe, Clock4 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
@@ -85,12 +86,12 @@ const AboutSection = () => {
             </div>
 
             {/* CTA Button */}
-            <a
-              href="/about"
+            <Link
+              to="/about"
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-medium transition"
             >
               Learn More About Us
-            </a>
+            </Link>
             </div>
           </motion.div>
         </div>
