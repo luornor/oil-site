@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route,useLocation  } from "react-router-dom";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -26,12 +26,23 @@ import ShipManagementService from "./pages/ShipManagementService";
 import BondedTerminal from "./pages/BondedTerminal";
 import RealEstateService from "./pages/RealEstateService";
 import ShippingAgency from "./pages/ShippingAgency";
+import RouteChangeTracker from "./components/RouteChangeTracker";
+import { AnimatePresence } from "framer-motion";
+import { useEffect, useState  } from "react";
 
 
-function App() {
+function AppRoutes() {
+  const location = useLocation();
+  const [delayedLocation, setDelayedLocation] = useState(location);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setDelayedLocation(location), 400); // 400ms delay
+    return () => clearTimeout(timer);
+  }, [location]);
+
   return (
-    <Router>
-      <Routes>
+    <AnimatePresence mode="wait">
+      <Routes location={delayedLocation} key={delayedLocation.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
@@ -59,6 +70,15 @@ function App() {
         <Route path="/ship-management" element={<ShipManagementService />} />
         <Route path="/real-estate-service" element={<RealEstateService />} />
       </Routes>
+    </AnimatePresence>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <RouteChangeTracker />
+      <AppRoutes />
     </Router>
   );
 }
